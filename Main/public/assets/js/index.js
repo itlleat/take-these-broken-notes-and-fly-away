@@ -210,7 +210,7 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('/notes', {
+  fetch('./public/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
