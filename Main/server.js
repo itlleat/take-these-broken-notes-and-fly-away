@@ -36,19 +36,27 @@
 // // Start the server on the port
 // app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
 
-// // need to fill in the code for steps 10 and 11 to read and write data to the db.json file.
+// // // need to fill in the code for steps 10 and 11 to read and write data to the db.json file.
 
 const express = require('express');
+// const cors = require('cors');
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 // Initialize the app and create a port
 const app = express();
 const PORT = process.env.PORT || 3001;
+// app.listen('/api/http://localhost:3001/');
 
 // Set up body parsing, static, and route middleware
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+  });
+  
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+// app.use(cors());
 app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
