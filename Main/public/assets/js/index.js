@@ -180,7 +180,6 @@
 //   noteText.addEventListener('keyup', handleRenderSaveBtn);
 // }
 
-// getAndRenderNotes();
 
 let noteTitle;
 let noteText;
@@ -210,7 +209,7 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('./public/notes', {
+  fetch('/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
