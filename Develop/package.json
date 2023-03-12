@@ -3,17 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "demon": "nodemon server.js"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "fs": "^0.0.1-security",
-    "util": "^0.12.5",
-    "uuid": "^9.0.0",
     "uuid4": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0"
   }
 }
