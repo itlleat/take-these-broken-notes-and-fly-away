@@ -1,8 +1,9 @@
 // I'm using the uuidv4 package so that the users unique id does not have time or location tracking information
-
-const fs = require('fs');
 const util = require('util');
-const uuidv4 = require('uuid/v4');
+const fs = require('fs');
+const { v4: uuidv4 } = require('uuid');
+// const uuidv1 = require('uuid/v1');
+
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
