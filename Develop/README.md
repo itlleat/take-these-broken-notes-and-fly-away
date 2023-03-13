@@ -160,7 +160,7 @@ You are required to submit BOTH of the following for review:
 
 ## Project Description
 
-Welcome! This application is designed to help the user keep track of notes. Upon the visiting the page you will prompted on the screen to get started. Click to begin and you'll be whisked away to a second page where you are allowed to write, store, view, and delete notes. The application is using nodejs and an express framework for the back end. 
+Welcome! This application is designed to help the user keep track of notes. Upon the visiting the page you will prompted on the screen to get started. Click to begin and you'll be whisked away to a second page where you are allowed to write, store, view, and delete notes. The application is using nodejs and an express framework for the back end! 
 
 
 ### Application Url
