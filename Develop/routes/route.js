@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+// Creating an express router that serves our html files via our GET requests to specific paths.
 const path = require('path');
 const router = require('express').Router();
 
@@ -12,4 +14,3 @@ router.get('*', (req, res) => {
 
 
 module.exports = router;
-

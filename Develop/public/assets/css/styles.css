@@ -1,9 +1,22 @@
-html,
+
+
+html, body { 
+  background: url("/Develop/public/assets/images/death_of_marat_jacques-louis_david.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
 
 .save-note {
   display: none;
